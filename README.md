@@ -22,4 +22,4 @@ See - https://developer.chrome.com/extensions/manifest
 
 Forked and only slightly modified from https://github.com/wpp/ScreenStream
 
-See README.md there for more documentaiton.
+See README.md there for more documentation.
