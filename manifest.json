@@ -1,0 +1,23 @@
+{
+  "name": "Verbling Screensharing Extension",
+  "description": "Share your screen / desktop with other Verbling users",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://192.168.1.64:8000/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": [
+    "desktopCapture",
+    "https://192.168.1.64:8000/*",
+    "tabs"
+  ]
+}
