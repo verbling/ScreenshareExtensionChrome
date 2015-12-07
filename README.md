@@ -1,5 +1,8 @@
 # ScreenshareExtensionChrome
-Chrome extension to expose https://developer.chrome.com/extensions/desktopCapture to a website script. content-script.js acts as middle-man between background.js and the client application.
+Chrome extension to expose https://developer.chrome.com/extensions/desktopCapture to a website script.
+
+content-script.js acts as middle-man between background.js and the client application.
+
 
 # Configuration
 Edit extension/manifest.json. Replace "https://192.168.1.64:8000" in "content_scripts" and "permissions" to be the URL that hosts the client app. NOTE - client app must be served over https .
