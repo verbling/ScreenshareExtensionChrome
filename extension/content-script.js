@@ -20,6 +20,8 @@ window.addEventListener('message', function(event) {
 	if (event.data.type && ((event.data.type === 'SS_UI_REQUEST') ||
 							(event.data.type === 'SS_UI_CANCEL'))) {
 		port.postMessage(event.data);
+	} else if (event.data.type && ((event.data.type === 'SS_CHECK_STATUS'))) {
+		window.postMessage({ type: 'SS_PING', text: 'start' }, '*');
 	}
 }, false);
 
