@@ -1,9 +1,11 @@
 {
-  "name": "Vling Screensharing Extension",
+  "name": "Verbling Screensharing Extension",
   "description": "Share your screen / desktop with other Verbling users",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "manifest_version": 2,
   "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
     "128": "icon.png"
   },
   "background": {
@@ -11,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://124.111.160.179:8082/*", "https://verbling.dev:8082/*", "https://*.verbling.com/*"],
+      "matches": ["https://*.verbling.com/*", "https://verbling.dev:8082/*", "https://124.111.160.179:8082/*"],
       "js": ["content-script.js"]
     }
   ],
